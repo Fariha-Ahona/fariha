@@ -1,0 +1,468 @@
+/* ::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-thumb{
+    color:var(--primary-color)
+} */
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    height: 100vh;
+    padding: 0px;
+    font-family: Poppins;
+
+
+}
+
+.nav2 li {
+    list-style: none;
+}
+
+.nav2 a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.nav2 ul {
+    display: flex;
+    gap: 15px;
+}
+
+.header {
+    background-color: var(--background-color);
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    padding: 15px 0px;
+    margin-bottom: 100px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 100%; */
+    padding: 0 40px;
+    margin: 0 auto;
+
+
+}
+/* 
+.nav1 h2 {
+    color: var(--font-color);
+} */
+
+.nav2 ul :after hover {
+    background-color: var(--font-color);
+    transition: 0.5s ease;
+}
+
+.about-whole {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.about {
+    width: 100%;
+    max-width: 75%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.about-text h1 {
+    font-size: 25px;
+
+}
+
+.about-text p {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.about-text p span {
+    color: var(--font-color);
+    font-weight: bolder;
+}
+
+.image {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+
+}
+
+.icon-btn {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.icon {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.icon a {
+    color: var(--primary-color);
+    text-decoration: none;
+
+}
+
+.icon a i {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.btn1 {
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    color: var(--background-color);
+    font-size: 10px;
+    padding: 10px 20px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.about-me {
+    /* margin: 0px 10px; */
+    /* background: rgb(240, 202, 159); */
+    background-color: linear-gradient(90deg, rgba(240, 202, 159, 1) 26%, rgba(225, 108, 102, 0.9500175070028011) 78%);
+    width: 100%;
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.mypic {
+    background-color: var(--font-color);
+    width: auto;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 25px;
+    position: relative;
+}
+
+.img {
+    width: 250px;
+    height: auto;
+    background-color: var(--background-color);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 15px;
+}
+
+.myimage {
+    width: 250px;
+    height: 300px;
+}
+
+.myimage .contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.myimage h1 {
+    font-size: 18px;
+}
+
+.mypic img {
+    width: 300px;
+    height: auto;
+    transform: transparent;
+    position: absolute;
+    bottom: 0;
+    border-radius: 25px;
+
+}
+
+.mydetail {
+    width: 500px;
+    padding: 30px 20px;
+}
+
+.mydetail p {
+    font-size: 18px;
+    /* text-align: le; */
+    /* padding: 40px 30px; */
+
+}
+
+.mydetail p span {
+    color: var(--font-color);
+    font-size: 30px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.project {
+    /* width: 100%; */
+    background-color: whitesmoke;
+    padding: 20px 30px;
+    gap: 20px;
+}
+
+.project-nav ul {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 23px;
+    align-items: center;
+    padding-bottom: 20px;
+
+}
+
+.portnav {
+    list-style: none;
+    color: var(--primary-color);
+    border: 3px inset var(--font-color);
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.portnav:hover{
+    transition: 0.5s ease-out var(--font-color);
+}
+
+.portnav :hover {
+    transition: 0.3s, ease-in-out;
+}
+
+.pro-project {
+    display: flex;
+    justify-content: center;
+    /* grid-template-columns: repeat(3, 1fr) ; */
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.project-card {
+    background-color: rgba(197, 97, 58, 0.1);
+    padding: 10px;
+    border-radius: 20px;
+    width: 300px;
+    height: auto;
+    box-shadow: 0 50px 50px rgba(90, 78, 78, 0.2);
+    text-align: center;
+}
+
+.imag-card img {
+    width: 100%;
+    height: 14rem;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.text-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    height: 50px;
+    font-size: 1rem;
+    border-radius: 20px;
+}
+
+.text-card p {
+    padding: 5px 10px;
+}
+
+.text-card i {
+    color: var(--font-color);
+}
+
+.certificate-container {
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: whitesmoke;
+   /*linear-gradient(90deg, rgba(240, 202, 159, 1) 26%, rgba(225, 108, 102, 0.9500175070028011) 78%); */
+}
+
+
+
+.cer-text {
+    font-size: 20px;
+    margin: 40px;
+    text-align: center;
+}
+.certificate{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px 40px;
+}
+.certificte-wrapper{
+    position: relative;
+    max-width: 30rem;
+    margin: 30px 40px;
+}
+.cer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* width: 100%; */
+    /* height: auto; */
+}
+.cer-details p{
+    font-family: Bungee;
+    font-size: 40px;
+    padding: 20px;
+    color: var(--primary-color);
+}
+.carousel {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .carousel-track {
+    display: flex;
+    aspect-ratio: 10/6;
+    /*width: calc(100% * 4);  Adjust according to the number of items */
+    animation: scroll 20s linear infinite;
+  }
+  
+  .carousel-item {
+    flex: 1 0 100%; /* Each item takes up 100% of the carousel width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: #fff;
+    border-right: 2px solid #ddd;
+  }
+  .carousel-item img{
+    width: 600px;
+    height: 380px;
+    border-radius: 20px;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0%);
+    }
+    25% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(-200%);
+    }
+    75% {
+      transform: translateX(-300%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+.testimonial-container{
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 20px 30px;
+    gap: 20px;
+}
+.testimonial-cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.test-card{
+    width: 380px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.89);
+    box-shadow: 10px 10px 10px rgba(230, 193, 193, 0.2);
+    color: var(--primary-color);
+    padding: 20px 30px;
+    border-radius: 20px;
+}
+.test-star ul{
+    list-style: none;
+    display: flex;
+    justify-content:flex-start;
+    gap: 5px;
+    color: var(--font-color);
+    padding: 5px;
+}
+.test-text{
+    padding: 5px;
+}
+.test-giv{
+    display: flex;
+    gap: 20px;
+    padding: 5px;
+}
+.test-img img{
+    width: 67px;
+    height: auto;
+    border-radius: 50%;
+}
+.test-giv-detail span{
+    font-size: 20px;
+    font-weight: bold;
+}
+footer{
+    padding: 10px 18px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+.name{
+    font-size: 25px;
+    font-family: Bungee;
+    color: var(--font-color);
+}
+.skills ul{
+    list-style: none;
+}
+.skills h4 span{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.address p span{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.socials{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+}
+
+@media only screen and  (min-width: 200px) and (max-width: 576px){
+    .about-whole{
+        padding: 10px 20px;
+    }
+    .about-text{
+        font-size: 15px;
+    }
+    .about{
+        gap: 20px;
+
+    }
+    
+}
